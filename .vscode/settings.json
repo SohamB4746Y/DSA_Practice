@@ -1,0 +1,14 @@
+{
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.showExecutionMessage": false,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.executorMap": {
+        "cpp": "& \"$workspaceRoot\\.vscode\\run_cpp_task.bat\" $fullFileName $fileNameWithoutExt"
+    },
+    "code-runner.executorMapByFileExtension": {
+        ".cpp": "& \"$workspaceRoot\\.vscode\\run_cpp_task.bat\" $fullFileName $fileNameWithoutExt"
+    }
+}
