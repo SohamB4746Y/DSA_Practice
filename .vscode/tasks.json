@@ -1,0 +1,60 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ build active file",
+            "command": "C:/MinGW/bin/g++.exe",
+            "args": [
+                "-std=c++17",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "dedicated",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Build task using g++ for C++ (Windows MinGW)"
+        },
+        {
+            "label": "Run C++ active file",
+            "type": "shell",
+            "command": "\"${workspaceFolder}\\.vscode\\run_cpp.bat\" \"${file}\" \"${fileBasenameNoExtension}\"",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "group": {
+                "kind": "none",
+                "isDefault": false
+            },
+            "detail": "Compile and run the active C++ file in the integrated terminal"
+        }
+    ]
+}
